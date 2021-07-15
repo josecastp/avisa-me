@@ -39,4 +39,10 @@ exports.updateSettings = async (req,res) =>{
     console.log("actualizado", workspace); 
   }
 
+  exports.exportTasks = async (req, res) =>{
+  
+
+    res.send("Exportado el documento")
+  }
+
 
