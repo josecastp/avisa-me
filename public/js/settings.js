@@ -17,3 +17,5 @@ cboxHideCompletedTasks.addEventListener("change", (event)=>{
    .catch(error => console.error('Error:', error))
    .then(response => console.log('Success:', response));
 })
+
+

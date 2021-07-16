@@ -18,6 +18,7 @@
               <% } %>
             <label class="form-check-label" for="hideCompletedTasksId">Ocultar tareas completadas</label>  
         </div>
+        
        <!--  Código html/ejs para exportar notas -->
         <div>
          <!--  <button onclick="downloadText('txt')">download plain text file</button><br>
@@ -25,10 +26,15 @@
 
           <form action="/settings/export" method="GET">
             <select class="" name="exportTasks">
-            <option value="" disabled selected>Exporta a:</option>
-            <option value="txt">download plain text file</option>
-            <option value="html">show html file</option>
+              <option value="" disabled selected>Exporta a formato:</option>
+              <option value="txt">txt</option>
+              <option value="html">html</option>
+              <option value="css">css</option>
+              <option value="json">json</option>
+              <option value="csv">csv</option>
+              <option value="xls">xls</option>
             </select>
+            <input type="text" style="visibility: hidden" name="idWorkspace" value="<%=idWorkspace%>">
             <p><input type="submit"></input>
             </p>
             </form>
